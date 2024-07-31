@@ -1,0 +1,242 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/* Resetting and general styles */
+body {
+  font-size: 18px;
+  font-family: "Calibri Light", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body h2 {
+  color: #006DA4;
+}
+
+ul {
+  list-style-type: none; /* Remove default bullet points */
+}
+
+ul li::before {
+  content: "-";
+  margin-right: 8px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+/* Header styles */
+.header {
+  background-color: #006DA4;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  height: 180px;
+  max-width: 100%;
+  margin-right: 20px;
+  border-radius: 20%;
+  object-fit: contain;
+  transition: transform 0.4s ease-in-out;
+}
+.profile-image:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation styles */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  border-radius: 22px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  margin-top: 10px;
+}
+
+.nav-bar a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 22px;
+}
+
+.nav-bar a:hover {
+  background: #006DA4;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: underline; /* Example: Underline on hover */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.social-icon {
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+.social-media-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-media-button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  outline: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: grid;
+  place-items: center;
+}
+
+.social-media-button:hover {
+  outline-offset: 3px;
+  transition: all 0.3s;
+}
+
+.social-media-button img {
+  transition: all 0.3s;
+}
+
+.social-media-button:hover img {
+  transform: scale(1.15);
+}
+
+.social-media-button:nth-child(1):hover {
+  background: linear-gradient(to left, #0A66C2, #1976D2);
+}
+.social-media-button:nth-child(2):hover {
+  background: radial-gradient(#455A64, #4D768A);
+}
+.social-media-button:nth-child(3):hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 60%, #d6249f 45%, #285AEB 90%);
+}
+
+footer {
+  height: 40px;
+  background-color: #006DA4;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact {
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+
+  .profile-image {
+    height: 120px; /* Decrease profile image size */
+  }
+
+  .nav-bar {
+    justify-content: center; /* Center navigation links */
+  }
+
+  .nav-bar a {
+    padding: 8px 12px; /* Reduce padding for navigation links */
+  }
+
+  main {
+    padding: 10px; /* Reduce main content padding */
+  }
+
+  .social-icons {
+    padding-left: 20px;
+    padding-right: 20px; /* Adjust padding for social icons */
+  }
+
+  .social-media-button {
+    width: 2.5rem;
+    height: 2.5rem; /* Adjust social media button size */
+  }
+}

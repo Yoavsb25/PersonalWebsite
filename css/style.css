@@ -209,17 +209,21 @@ footer {
 }
 
 /* Responsive Styles */
+@media only screen and (max-width: 1024px) {
+  /* For tablets in portrait mode */
+  .nav-bar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+}
+
 @media only screen and (max-width: 768px) {
   body {
-    font-size: 16px; /* Decrease font size for smaller screens */
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
   }
 
   .profile-image {
     height: 120px; /* Decrease profile image size */
-  }
-
-  .nav-bar {
-    justify-content: center; /* Center navigation links */
   }
 
   .nav-bar a {
@@ -227,16 +231,33 @@ footer {
   }
 
   main {
-    padding: 10px; /* Reduce main content padding */
+    padding: 1rem; /* Adjust padding for smaller screens */
   }
 
   .social-icons {
-    padding-left: 20px;
-    padding-right: 20px; /* Adjust padding for social icons */
+    padding-left: 1rem;
+    padding-right: 1rem; /* Adjust padding for social icons */
   }
 
   .social-media-button {
     width: 2.5rem;
     height: 2.5rem; /* Adjust social media button size */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* For very small screens (e.g., phones in portrait mode) */
+  .header {
+    padding: 0.5rem; /* Adjust header padding */
+  }
+
+  .social-icons {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; /* Adjust padding for very small screens */
+  }
+
+  .social-media-button {
+    width: 2rem;
+    height: 2rem; /* Adjust social media button size for very small screens */
   }
 }

@@ -24,6 +24,9 @@ body {
 body h2 {
   color: #006DA4;
 }
+body h3 {
+  color: rgb(1, 86, 130)
+}
 
 ul {
   list-style-type: none; /* Remove default bullet points */

@@ -56,7 +56,7 @@
     height: 83vh;
     margin-bottom: 0;
   }
-  article {
+  .experience-container {
     font-size: 1rem;
   }
   footer nav {
@@ -96,8 +96,5 @@
   }
   .title {
     font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
   }
 }

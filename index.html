@@ -4,313 +4,371 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Yoav Sborovsky - Portfolio</title>
     <link rel="stylesheet" href="static/style.css" />
     <link rel="stylesheet" href="static/mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Yoav Sborovsky</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Yoav Sborovsky</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">Yoav Sborovsky</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="menu-links">
-          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Yoav Sborovsky</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="assets/images/profile-pic.png" alt="Yoav Sborovsky profile picture" class="profile-img" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Yoav Sborovsky</h1>
-        <p class="section__text__p2">Fullstack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/files/Yoav-Sborovsky-CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="assets/images/profile-pic.png" alt="Yoav Sborovsky profile picture" class="profile-img" />
         </div>
-        <div id="socials-container">
-          <img
-            src="assets/images/linkedin.png"
-            alt="My LinkedIn profile"
-            class="social-icon"
-            onclick="location.href='https://www.linkedin.com/in/yoav-sborovsky-5a85b41a1/'"
-          />
-          <img
-            src="assets/images/github.png"
-            alt="My Github profile"
-            class="social-icon"
-            onclick="location.href='https://github.com/Yoavsb25'"
-          />
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Yoav Sborovsky</h1>
+          <p class="section__text__p2">Fullstack Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/files/Yoav-Sborovsky-CV.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="assets/images/linkedin.png"
+              alt="My LinkedIn profile"
+              class="social-icon"
+              onclick="location.href='https://www.linkedin.com/in/yoav-sborovsky-5a85b41a1/'"
+            />
+            <img
+              src="assets/images/github.png"
+              alt="My Github profile"
+              class="social-icon"
+              onclick="location.href='https://github.com/Yoavsb25'"
+            />
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="education">
-      <p class="section__text__p1">About My</p>
-      <h1 class="title">Education</h1>
+      </section>
+
+      <section id="education">
+        <p class="section__text__p1">About My</p>
+        <h2 class="title">Education</h2>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
               <img
                 src="assets/images/education.png"
-                alt="Experience icon"
+                alt="education-icon"
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc.<br />Computer Science and Entrepreneurship</p><a href="https://www.runi.ac.il/en" target="_blank" rel="noopener" class="link">Reichman University</a><br />
+              <p>B.Sc.<br />Computer Science and Entrepreneurship</p>
+              <a href="https://www.runi.ac.il/en" target="_blank" rel="noopener" class="link">Reichman University</a><br />
               <img
-                  src="assets/images/logo.png"
-                  alt="reichman-icon"
-                  class="education-icon"
-                />
+                src="assets/images/reichman_logo.png"
+                alt="reichman-icon"
+                class="education-icon"
+              />
             </div>
             <div class="details-container">
-            <div class="article-container">
-              <article>
-                <img
-                  src="assets/images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Numpy, Pandas, Matplotlib</p>
+              <div class="article-container">
+                <div class="article-container-sub">
+                  <article>
+                  <img
+                    src="assets/images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                  </div>
+                </article>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="assets/images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>OOP</p>
+                <div class="article-container-sub">
+                  <article>
+                  <img
+                    src="assets/images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                  </div>
+                </article>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="assets/images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
+                <div class="article-container-sub">
+                  <article>
+                  <img
+                    src="assets/images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C</h3>
+                  </div>
+                </article>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="assets/images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
+                <div class="article-container-sub">
+                  <article>
+                  <img
+                    src="assets/images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                  </div>
+                </article>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="assets/images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
+                <div class="article-container-sub">
+                  <article>
+                  <img
+                    src="assets/images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                  </div>
+                </article>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="assets/images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
+                <div class="article-container-sub">
+                  <article>
+                  <img
+                    src="assets/images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                  </div>
+                </article>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="assets/images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
+                <div class="article-container-sub">
+                  <article>
+                  <img
+                    src="assets/images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL</h3>
+                  </div>
+                </article>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="assets/images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GIT</h3>
+                <div class="article-container-sub">
+                  <article>
+                  <img
+                    src="assets/images/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>GIT</h3>
+                  </div>
+                </article>
                 </div>
-              </article>
-            </div>
-            </div>
-          </div>
-        </div>
-      <img
-        src="assets/images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Optimization Analyst | Affilomania | Oct 2020 - Oct 2021</h2>
-            <div class="experience-container">
-              <ul>
-                <li>Analyzed complex data</li>
-                <li>increased sales by 15% by optimizing leads distribution system</li>
-                <li>Created monthly reports for executive management and accounting</li>
-                <li>Maintained ongoing communication and relationships with clients worldwide</li>
-                <li>Prioritized tasks to meet tight deadlines</li>
-              </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <img
+          src="assets/images/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h2 class="title">Experience</h2>
         <div class="experience-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <h2 class="experience-sub-title">Commander of Flight Academy Cadets | Israeli Air Force | Nov 2014 - Feb 2018</h2>
+              <h3 class="experience-sub-title">Optimization Analyst | Affilomania | Oct 2020 - Oct 2021</h3>
+              <div class="experience-container">
+                <ul>
+                  <li>Analyzed complex data</li>
+                  <li>increased sales by 15% by optimizing leads distribution system</li>
+                  <li>Created monthly reports for executive management and accounting</li>
+                  <li>Maintained ongoing communication and relationships with clients worldwide</li>
+                  <li>Prioritized tasks to meet tight deadlines</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3 class="experience-sub-title">Commander of Flight Academy Cadets | Israeli Air Force | Nov 2014 - Feb 2018</h3>
               <div class="experience-container">
                 <ul>
                   <li>Led a team of 10 soldiers, ensuring their welfare.</li>
                   <li>Promoted to Company Sergeant Major, overseeing 60 soldiers and commanders.</li>
                   <li>Planned and executed different types of military drills.</li>
                   <li>Handled unexpected events while making decisions under pressure.</li>
-                  <li>Military excellence's: excellence in basic training, exemplary excellence in squad commanders’ course, excellent faculty member of the air force flight academy training, brigade excellence</li>
+                  <li>Military excellence's: excellence in basic training, exemplary excellence in squad commanders' course, excellent faculty member of the air force flight academy training, brigade excellence</li>
                 </ul>
               </div>
             </div>
           </div>
-      </div>
-    <img
-        src="assets/images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="assets/images/personal-website.png"
-                alt="Project 1"
-                class="project-img"
-              />
+        </div>
+        <img
+          src="assets/images/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h2 class="title">Projects</h2>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="assets/images/personal-website.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h3 class="experience-sub-title project-title">Portfolio Website</h3>
+              <div class="about-div">
+                <p class="about-text">A professional portfolio website using HTML, CSS, and JavaScript to showcase my resume and recent projects</p>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Yoavsb25/PersonalWebsite'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://yoavsb25.github.io/PersonalWebsite/'"
+                >
+                  Live Demo
+                </button>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Portfolio Website</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="assets/images/Teamaker.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h3 class="experience-sub-title project-title">Team Balancer</h3>
+              <div class="about-div">
+                <p class="about-text">A team balancer web app with Flask, Python, HTML, CSS, and JavaScript that efficiently organizes players into balanced teams based on their skill levels</p>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Yoavsb25/TeamMakerWebb'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://teammakerwebb-9593dbb48f8c.herokuapp.com'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="assets/images/Realty-Properties.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h3 class="experience-sub-title project-title">Realty Properties</h3>
+              <div class="about-div">
+                <p class="about-text">A web app designed to simplify property management and enhance rental experiences through user-friendly features</p>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Yoavsb25/Realty-Company'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://realty-company-836f47b41706.herokuapp.com'"
+                >
+                  Live Demo
+                </button>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="assets/images/result.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Team Balancer</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Yoavsb25/TeamMakerWebb'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+        </div>
+        <img
+          src="assets/images/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="assets/images/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:Yoavsb25@gmail.com">Yoavsb25@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="assets/images/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/yoav-sborovsky-5a85b41a1/">LinkedIn</a></p>
           </div>
         </div>
-      </div>
-      <img
-        src="assets/images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="assets/images/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Yoavsb25@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="assets/images/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/yoav-sborovsky-5a85b41a1/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -324,6 +382,7 @@
       </nav>
       <p>Copyright &#169; 2024 Yoav Sborovsky. All Rights Reserved.</p>
     </footer>
+
     <script src="scripts/script.js"></script>
   </body>
 </html>

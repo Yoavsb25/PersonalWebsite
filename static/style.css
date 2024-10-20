@@ -54,12 +54,13 @@ a {
 a:hover {
   color: grey;
 }
+
 .social-icon {
   cursor: pointer;
   height: 2rem;
-
 }
-.social-icon:hover{
+
+.social-icon:hover {
   scale: 110%;
 }
 
@@ -180,7 +181,8 @@ section {
   width: 400px;
   margin: auto 0;
 }
-.profile-img{
+
+.profile-img {
   border-radius: 20%;
 }
 
@@ -224,9 +226,8 @@ section {
 /* BUTTONS */
 
 .btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  margin-top: auto; /* Push buttons to the bottom */
+  padding-bottom: 1rem;
 }
 
 .btn {
@@ -269,9 +270,9 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+/* EDUCATION SECTION */
 
-#about {
+#education {
   position: relative;
 }
 
@@ -291,12 +292,11 @@ section {
   display: flex;
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
 .education-icon {
   margin-top: 4vh;
   filter: grayscale(100%);
+  width: 8vw;
+  height: 8vw;
 }
 
 .arrow {
@@ -347,11 +347,15 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
+  text-align: center;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  gap: 4rem;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.article-container-sub{
+  width: 6vw;
 }
 
 .experience-container {
@@ -362,15 +366,9 @@ section {
   gap: 2.5rem;
 }
 
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: initial;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
+.experience-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 /* PROJECTS SECTION */
@@ -382,12 +380,16 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Set a consistent height for all project containers */
 }
 
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .project-title {
@@ -398,6 +400,17 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+.about-div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-text {
+  height: 100px;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
 }
 
 /* CONTACT */

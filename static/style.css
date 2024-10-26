@@ -185,6 +185,10 @@ section {
 .profile-img {
   border-radius: 20%;
 }
+.profile-img:hover{
+  scale: 1.1;
+  transition: ease-in 0.15s;
+}
 
 .section__text {
   align-self: center;
@@ -388,8 +392,8 @@ section {
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 200px;
-  object-fit: cover;
+  height: 300px;
+  object-fit: contain;
 }
 
 .project-title {
@@ -411,6 +415,7 @@ section {
   height: 100px;
   margin-bottom: 1rem;
   padding: 1rem 1rem;
+  overflow-y: auto;
 }
 
 /* CONTACT */
